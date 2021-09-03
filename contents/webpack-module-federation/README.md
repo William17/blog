@@ -280,13 +280,6 @@ Promise.all(/*! import() */[
 ```
 `webpack_sharing_consume_default_react_react` 这个名称由下面提到的一些配置构成，`webpack_sharing_consume_{sharedScope}_{shareKey}_{包名}`。在加载某个共享模块的时候，会初始化它所属的 shared scope  
 
-
-1. 如果不同的模块需要不同的共享库的版本怎么办，例如，`module-b` 需要 `vue@2.x`, 但是 `module-c` 需要  `vue@3.x`？  
-我们可以通过在全局共享对象中添加版本信息    
-2. 如果我们想要项目 a, 项目 b 共享 `vue`, 项目 c, 项目 d 共享另外一个  `vue`？  
-我们可以创建多个共享对象表，共享模块可以配置它所在的共享对象表的名称  
-
-
 ### 配置说明  
 下面列出 webpak module federation 的一些配置项以及解释。  
 
